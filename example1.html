@@ -16,6 +16,15 @@
                 <th>Họ và tên</th>
                 <th>Ngày sinh</th>
                 <th>Điểm</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>{{student[0].name}}</td>
+                <td>{{student[0].birthday}}</td>
+                <td>{{student[0].mark}}</td>
+                <td>
+                    <a href="#" ng-click="edit(0)">Sửa</a>
+                </td>
             </tr>
         </table>
     </div>
