@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS</title>
+    <script src="js/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+<div class="container">
+    <div ng-controller="add">
+        <form></form>
+    </div>
+    <div ng-controller="show">
+        <table class="table">
+            <tr>
+                <th>Họ và tên</th>
+                <th>Ngày sinh</th>
+                <th>Điểm</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    var app = angular.module("myApp", []);
+    app.controller("add", function ($scope) {
+
+    });
+    app.controller("show", function ($scope) {
+
+    });
+</script>
+
+</body>
+</html>
