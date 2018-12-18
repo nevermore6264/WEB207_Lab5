@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS</title>
+    <script src="js/angular.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body ng-app="myApp">
+<div class="container">
+    <div ng-controller="crud">
+        <form>
+            <div class="form-group">
+                <label>Họ và tên:</label>
+                <input ng-model="student.name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Ngày sinh:</label>
+                <input ng-model="student.birthday" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Điểm:</label>
+                <input ng-model="student.mark" class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" ng-click="insert()">Thêm</button>
+                <button class="btn btn-default" ng-click="update()">Sửa</button>
+                <button class="btn btn-default" ng-click="delete()">Xoá</button>
+                <button class="btn btn-default" ng-click="cancel()">Hủy</button>
+                <button class="btn btn-default" ng-click="clear()">Làm mới</button>
+            </div>
+        </form>
+
+        <table class="table">
+            <tr>
+                <th>Họ và tên</th>
+                <th>Ngày sinh</th>
+                <th>Điểm</th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="st in students">
+                <td>{{st.name}}</td>
+                <td>{{st.birthday}}</td>
+                <td>{{st.mark}}</td>
+                <td>
+                    <a href="#" ng-click="edit($index)">Sửa</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    var app = angular.module("myApp", []);
+    app.controller("crud", function ($scope) {
+        $scope.students = [];
+        $scope.student = {};
+        $scope.index = -1;
+
+        $scope.clear = function () {
+            $scope.student = {};
+            $scope.index = -1;
+        }
+        $scope.insert = function () {
+            $scope.students.push(angular.copy($scope.student));
+            $scope.clear();
+        }
+        $scope.update = function () {
+            $scope.students[$scope.index] = angular.copy($scope.student);
+        }
+        $scope.delete = function () {
+            $scope.students.splice($scope.index, 1);
+            $scope.clear();
+        }
+        $scope.cancel = function () {
+            if ($scope.index == -1) {
+                $scope.clear();
+            } else {
+                $scope.edit($scope.index);
+            }
+        }
+        $scope.edit = function (index) {
+            $scope.index = index;
+            $scope.student = angular.copy($scope.students[index]);
+
+        }
+    });
+
+</script>
+
+</body>
+</html>
