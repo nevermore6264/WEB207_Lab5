@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS</title>
+    <script src="js/angular.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body ng-app="myApp">
+<div class="container">
+    <div ng-controller="add">
+        <form>
+            <div class="form-group">
+                <label>Họ và tên:</label>
+                <input ng-model="student.name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Ngày sinh:</label>
+                <input ng-model="student.birthday" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Điểm:</label>
+                <input ng-model="student.mark" class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-default" ng-click="save()">Lưu</button>
+                <button class="btn btn-default" ng-click="cancel()">Hủy</button>
+            </div>
+        </form>
+    </div>
+    <div ng-controller="show">
+        <table class="table">
+            <tr>
+                <th>Họ và tên</th>
+                <th>Ngày sinh</th>
+                <th>Điểm</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>{{students[0].name}}</td>
+                <td>{{students[0].birthday}}</td>
+                <td>{{students[0].mark}}</td>
+                <td>
+                    <a href="#" ng-click="edit(0)">Sửa</a>
+                </td>
+            </tr>
+            <tr>
+                <td>{{students[1].name}}</td>
+                <td>{{students[1].birthday}}</td>
+                <td>{{students[1].mark}}</td>
+                <td>
+                    <a href="#" ng-click="edit(1)">Sửa</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    var app = angular.module("myApp", []);
+    app.controller("add", function ($scope, $rootScope) {
+        $scope.save = function () {
+            $rootScope.students[$rootScope.index] = $scope.student;
+        }
+        $scope.cancel = function () {
+            $rootScope.student = angular.copy($rootScope.students[$rootScope.index]);
+        }
+    });
+    app.controller("show", function ($scope, $rootScope) {
+        $rootScope.students = [
+            {
+                name: "Trần Trung Hiếu",
+                birthday: "26-06-1997",
+                mark: 10
+            },
+            {
+                name: "Nguyễn Thị Thu Thủy",
+                birthday: "22-08-1997",
+                mark: 8
+            }
+        ];
+        $scope.edit = function (index) {
+            $rootScope.index = index;
+            $rootScope.student = angular.copy($rootScope.students[index]);
+        }
+    });
+</script>
+
+</body>
+</html>
