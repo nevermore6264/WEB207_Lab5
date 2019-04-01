@@ -1,16 +1,28 @@
 var app = angular.module("myApp", []);
 app.controller("add", function ($scope) {
+    $('.input-group.date').datepicker({format: "dd.mm.yyyy"});
     $scope.save = function () {
         $scope.$parent.students[$scope.$parent.index] = $scope.student;
     }
     $scope.cancel = function () {
         $scope.$parent.student = angular.copy($scope.$parent.students[$scope.$parent.index]);
     }
+    $(function() {
+        $( "#datepicker" ).datepicker({
+            dateFormat : 'dd-mm-yy',
+            changeMonth : true,
+            changeYear : true,
+            yearRange: '-100y:c+nn',
+            maxDate: '-1d',
+            onSelect: function(date) {
+                angular.element($('#datepicker')).triggerHandler('input');
+            }
+        });
+    });
+
+
 });
 app.controller("show", function ($scope) {
-    $scope.model = {
-        isFormDisabled : false
-    }
 
     $scope.$parent.students = [
         {
@@ -25,7 +37,6 @@ app.controller("show", function ($scope) {
         }
     ];
     $scope.edit = function (index) {
-        isFormDisabled = true;
         $scope.$parent.index = index;
         $scope.$parent.student = angular.copy($scope.$parent.students[index]);
     }

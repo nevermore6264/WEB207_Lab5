@@ -8,7 +8,6 @@
     <script src="js/jquery.min.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="js/bootstrap.min.js"></script>
 </head>
 <body ng-app="myApp">
 <div class="container">
@@ -20,7 +19,7 @@
             </div>
             <div class="form-group">
                 <label>Ngày sinh:</label>
-                <input ng-model="student.birthday" class="form-control">
+                <input ng-model="student.birthday" id="datepicker" class="form-control">
             </div>
             <div class="form-group">
                 <label>Điểm:</label>
@@ -63,6 +62,8 @@
 <script src="js/ex1.js">
 
 </script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 </body>
 </html>
