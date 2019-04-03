@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+<div class="bg">
+    <div class="fixed">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a href="/">
+                        <img src="./images/logo.png" class="headerLogo" >
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h1 class="title">Workspace Register</h1>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a href="/">
+                        <img alt="vi" src="./images/vn.png" id="icon_lang"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-content">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-home"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Computer Name *" value=""/>
+                    </div>
+
+                    <div class="form-group input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Email Address *" value=""/>
+                    </div>
+
+                    <div class="form-group input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-earphone"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Phone Number *" value=""/>
+                    </div>
+
+                    <div class="form-group input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-briefcase"></i>
+                        </span>
+                        <select class="input-group form-control" name="businessAreas" required>
+                            <option value="" selected disabled>Choose A Business Areas *</option>
+                            <option value="Human Resources">Human Resources</option>
+                            <option value="Accounting And Finance">Accounting And Finance</option>
+                            <option value="Marketing And Advertising">Marketing And Advertising</option>
+                            <option value="Production">Production</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Operations">Operations</option>
+                            <option value="Customer Service">Customer Service</option>
+                            <option value="Purchasing">Purchasing</option>
+                            <option value="Legal Department">Legal Department</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group form-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-list"></i>
+                        </span>
+                        <select class="selectpicker form-control" name="companySize" required>
+                            <option selected disabled>Company Size *</option>
+                            <option value="~10">~ 10</option>
+                            <option value="10 - 50">10 - 50</option>
+                            <option value="50 - 100">50 - 100</option>
+                            <option value="100 - 200">100 - 200</option>
+                            <option value="200 ~">200 ~</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group form-group">
+                        <span class="input-group-addon">
+                             <i class="glyphicon glyphicon-tasks"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Domain *" value=""/>
+                        <span class="input-group-addon">.chatops.vn</span>
+                    </div>
+
+                    <div class="input-group form-group">
+                        <span class="input-group-addon">
+                             <i class="glyphicon glyphicon-align-justify"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Team Name *" value=""/>
+                    </div>
+
+                    <div class="input-group form-group">
+                        <span class="input-group-addon">
+                             <i class="glyphicon glyphicon-link"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Team Path *" value=""/>
+                        <span class="input-group-addon">.chatops.vn</span>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btnSubmit">Create Workspace</button>
+        </div>
+    </div>
+</div>
+<!--<div class="note">-->
+<!--<p>&copy; 2019 NAL Vietnam</p>-->
+<!--</div>-->
+
+</body>
+</html>
