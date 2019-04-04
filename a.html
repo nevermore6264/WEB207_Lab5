@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./a.css">
     <title>ChatOps</title>
 </head>
 <body>
@@ -27,7 +30,7 @@
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"
             >
-                <span class="navbar-toggler-icon"><img src="images/menu.svg" /></span>
+                <span class="navbar-toggler-icon"><img src="images/menu.svg"/></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,14 +45,23 @@
                         <a class="nav-link my-lg-5 mx-2" href="#" data-scroll-nav="5">Pricing</a>
                     </li>
                     <li class="nav-item btn-action-wrap">
-                        <button type="button" class="btn btn-outline-light my-lg-5 ml-2 action-btn-observed" data-action="Header button" data-scroll-nav="6">Get started</button>
+                        <button type="button" class="btn btn-outline-light my-lg-5 ml-2 action-btn-observed"
+                                data-action="Header button" data-scroll-nav="6">Get started
+                        </button>
                     </li>
                 </ul>
 
                 <ul class="language-chooser language-chooser-image qtranxs_language_chooser" id="qtranslate-chooser">
-                    <li class="lang-en active"><a href="https://mmc.nal.vn/en/" hreflang="en" title="English (en)" class="qtranxs_image qtranxs_image_en"><img src="https://mmc.nal.vn/app/plugins/qtranslate-x/flags/gb.png" alt="English (en)" /><span style="display:none">English</span></a></li>
-                    <li class="lang-vi"><a href="https://mmc.nal.vn/vi/" hreflang="vi" title="Tiếng Việt (vi)" class="qtranxs_image qtranxs_image_vi"><img src="https://mmc.nal.vn/app/plugins/qtranslate-x/flags/vn.png" alt="Tiếng Việt (vi)" /><span style="display:none">Tiếng Việt</span></a></li>
-                </ul><div class="qtranxs_widget_end"></div>
+                    <li class="lang-en active"><a href="https://mmc.nal.vn/en/" hreflang="en" title="English (en)"
+                                                  class="qtranxs_image qtranxs_image_en"><img
+                            src="https://mmc.nal.vn/app/plugins/qtranslate-x/flags/gb.png" alt="English (en)"/><span
+                            style="display:none">English</span></a></li>
+                    <li class="lang-vi"><a href="https://mmc.nal.vn/vi/" hreflang="vi" title="Tiếng Việt (vi)"
+                                           class="qtranxs_image qtranxs_image_vi"><img
+                            src="https://mmc.nal.vn/app/plugins/qtranslate-x/flags/vn.png" alt="Tiếng Việt (vi)"/><span
+                            style="display:none">Tiếng Việt</span></a></li>
+                </ul>
+                <div class="qtranxs_widget_end"></div>
             </div>
         </div>
     </nav>
@@ -66,27 +78,62 @@
                     <div class="screen-reader-response"></div>
                     <form action="/en/#wpcf7-f61-o1" method="post" class="wpcf7-form" novalidate="novalidate">
                         <div class="form-group">
-                            <span class="wpcf7-form-control-wrap your-company-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="your-name" aria-required="true" aria-invalid="false" placeholder="Company Name..." /></span>
+                            <span class="wpcf7-form-control-wrap your-company-name"><input type="text" name="your-name"
+                                                                                           value="" size="40"
+                                                                                           class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                                                                                           id="your-name"
+                                                                                           aria-required="true"
+                                                                                           aria-invalid="false"
+                                                                                           placeholder="Company Name..."/></span>
                         </div>
                         <div class="form-group">
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" id="your-email" aria-required="true" aria-invalid="false" placeholder="Email..." /></span>
+                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
+                                                                                    value="" size="40"
+                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                    id="your-email" aria-required="true"
+                                                                                    aria-invalid="false"
+                                                                                    placeholder="Email..."/></span>
                         </div>
                         <div class="form-group">
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" id="your-email" aria-required="true" aria-invalid="false" placeholder="Email..." /></span>
+                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
+                                                                                    value="" size="40"
+                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                    id="your-email" aria-required="true"
+                                                                                    aria-invalid="false"
+                                                                                    placeholder="Email..."/></span>
                         </div>
                         <div class="form-group">
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" id="your-email" aria-required="true" aria-invalid="false" placeholder="Email..." /></span>
+                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
+                                                                                    value="" size="40"
+                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                    id="your-email" aria-required="true"
+                                                                                    aria-invalid="false"
+                                                                                    placeholder="Email..."/></span>
                         </div>
                         <div class="form-group">
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" id="your-email" aria-required="true" aria-invalid="false" placeholder="Email..." /></span>
+                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
+                                                                                    value="" size="40"
+                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                    id="your-email" aria-required="true"
+                                                                                    aria-invalid="false"
+                                                                                    placeholder="Email..."/></span>
                         </div>
                         <div class="form-group">
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" id="your-email" aria-required="true" aria-invalid="false" placeholder="Email..." /></span>
+                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
+                                                                                    value="" size="40"
+                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
+                                                                                    id="your-email" aria-required="true"
+                                                                                    aria-invalid="false"
+                                                                                    placeholder="Email..."/></span>
                         </div>
                         <div class="contact-form-action">
-                            <input type="submit" value="Create Workspace" class="wpcf7-form-control wpcf7-submit btn-action" id="btn-send" />
+                            <input type="submit" value="Create Workspace"
+                                   class="wpcf7-form-control wpcf7-submit btn-action" id="btn-send"/>
                         </div>
-                        <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                </div>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -126,7 +173,8 @@
     <div class="footer-bottom">
         <div class="container">
             <img class="footer-logo" src="images/logo-white.png"/>
-            <span class="float-right">Made with <img class="footer-heart" src="images/hearts-white.svg"/> by <a href="https://nal.vn">nal.vn</a></span>
+            <span class="float-right">Made with <img class="footer-heart" src="images/hearts-white.svg"/> by <a
+                    href="https://nal.vn">nal.vn</a></span>
         </div>
     </div>
 </footer>
@@ -135,7 +183,7 @@
 <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.2/dist/typeit.min.js"></script>
 <script src="scrollIt.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function () {
         // Scrool Div.
         $.scrollIt({
             upKey: 38,
@@ -158,8 +206,8 @@
 </script>
 
 <script type="text/javascript">
-    $(document).ready(function(){
-        $(".action-btn-observed").click(function() {
+    $(document).ready(function () {
+        $(".action-btn-observed").click(function () {
             var action = $(this).attr('data-action');
             $("input#contact-action").val(action);
             console.log($(this).attr('data-action'));
