@@ -1,18 +1,14 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 body, html {
     height: 100%;
     margin: 0;
-}
-
-.bg {
-    background-image: url("./images/bg.png");
-    height: 100%;
-    background-position: right;
+    background-image: url(./images/bg.png);
     background-repeat: no-repeat;
+    background-position: top right;
 }
 
 div.fixed {
@@ -21,7 +17,7 @@ div.fixed {
     left: 0;
     height: 100px;
     width: 100%;
-    background: #73AD21;
+    background-color: #73AD21 !important;
 }
 
 .container {
@@ -29,7 +25,6 @@ div.fixed {
     top: 100px;
     width: 100%;
     height: calc(100% - 100px);
-    /*background-color: yellow;*/
     text-align: center;
 }
 
