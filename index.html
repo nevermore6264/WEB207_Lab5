@@ -107,20 +107,29 @@
                                                                                     placeholder="Phone Number..."/></span>
                         </div>
                         <div class="form-group">
-                            <span class="wpcf7-form-control-wrap your-size"><input type="text" name="your-size"
-                                                                                   value="" size="40"
-                                                                                   class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
-                                                                                   id="your-size" aria-required="true"
-                                                                                   aria-invalid="false"
-                                                                                   placeholder="Company Size..."/></span>
+                            <select size="1" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="your-area" name="businessAreas" required>
+                                <option selected disabled>Select A Business Area</option>
+                                <option value="Human Resources">Human Resources</option>
+                                <option value="Accounting And Finance">Accounting And Finance</option>
+                                <option value="Marketing And Advertising">Marketing And Advertising</option>
+                                <option value="Production">Production</option>
+                                <option value="Information Technology">Information Technology</option>
+                                <option value="Operations">Operations</option>
+                                <option value="Customer Service">Customer Service</option>
+                                <option value="Purchasing">Purchasing</option>
+                                <option value="Legal Department">Legal Department</option>
+                                <option value="Others">Others</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email"
-                                                                                    value="" size="40"
-                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control"
-                                                                                    id="your-email" aria-required="true"
-                                                                                    aria-invalid="false"
-                                                                                    placeholder="Company Area..."/></span>
+                                <select size="1" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="your-size" name="businessAreas" required>
+                                    <option selected disabled>Select A Company Size</option>
+                                    <option value="~10">~ 10</option>
+                                    <option value="10 - 50">10 - 50</option>
+                                    <option value="50 - 100">50 - 100</option>
+                                    <option value="100 - 200">100 - 200</option>
+                                    <option value="200 ~">200 ~</option>
+                                </select>
                         </div>
                         <div class="form-group">
                             <span class="wpcf7-form-control-wrap your-domain"><input type="text" name="your-domain"

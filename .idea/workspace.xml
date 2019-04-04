@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f4a1314-ddc2-49c5-994c-daf5d4128ddd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,13 +20,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="127" column="163" selection-start-line="127" selection-start-column="163" selection-end-line="127" selection-end-column="163" />
+            <state relative-caret-position="463">
+              <caret line="125" column="83" selection-start-line="125" selection-start-column="83" selection-end-line="125" selection-end-column="83" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="413" selection-start-line="413" selection-end-line="415" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-29" />
           </provider>
         </entry>
       </file>
@@ -52,6 +69,8 @@
       <find>logo-white</find>
       <find>bg.</find>
       <find>send</find>
+      <find>wpcf7-form</find>
+      <find>wpcf7-form-control</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -85,6 +104,8 @@
         <option value="$PROJECT_DIR$/images/heart-white.svg" />
         <option value="$PROJECT_DIR$/images/menu.svg" />
         <option value="$PROJECT_DIR$/images/facebook.svg" />
+        <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -180,7 +201,7 @@
       <workItem from="1554348725561" duration="3454000" />
       <workItem from="1554370673268" duration="448000" />
       <workItem from="1554371273545" duration="201000" />
-      <workItem from="1554371528110" duration="114000" />
+      <workItem from="1554371528110" duration="1167000" />
     </task>
     <task id="LOCAL-00001" summary="convert js file">
       <created>1554116143822</created>
@@ -207,13 +228,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27104000" />
+    <option name="totallyTimeSpent" value="28157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12164297" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12164297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -225,7 +246,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.27326733" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3069307" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3069307" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -354,13 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9705">
-          <caret line="647" column="1" selection-start-line="647" selection-start-column="1" selection-end-line="647" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/scrollIt.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1270">
@@ -400,10 +414,22 @@
     <entry file="file://$PROJECT_DIR$/images/facebook.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="413" selection-start-line="413" selection-end-line="415" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="127" column="163" selection-start-line="127" selection-start-column="163" selection-end-line="127" selection-end-column="163" />
+        <state relative-caret-position="463">
+          <caret line="125" column="83" selection-start-line="125" selection-start-column="83" selection-end-line="125" selection-end-column="83" />
           <folding>
             <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
