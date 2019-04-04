@@ -21,17 +21,8 @@ div.fixed {
     left: 0;
     height: 100px;
     width: 100%;
-    /*background: #73AD21;*/
+    background: #73AD21;
 }
-
-/*.note {*/
-/*text-align: center;*/
-/*height: 40px;*/
-/*background: -webkit-linear-gradient(left, #C7328E, #FA6750);*/
-/*color: #fff;*/
-/*font-weight: bold;*/
-/*line-height: 40px;*/
-/*}*/
 
 .container {
     position: absolute;
@@ -72,14 +63,15 @@ div.fixed {
     width: 22px;
     height: 15px;
     cursor: pointer;
-    margin-top: 25px;
 }
 
-.navbar-brand .center-block {
+.headerLogo {
     width: 170px;
     height: 47px;
 }
 
-.fixed .row .col-md-4 {
+.fixed .col-md-4 {
     text-align: center;
+    margin: auto 0;
 }
+
